@@ -1,0 +1,205 @@
+Microsoft Windows [Versión 10.0.22631.4460]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>code .
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git init
+Reinitialized existing Git repository in C:/Users/Johan Manzano/Desktop/Programacion TalenTech/Laboratorio 6 Repositorio git/.git/
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git add index.html
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git commit -m "Version con index.html y titulo primario"
+[master (root-commit) a68f804] Version con index.html y titulo primario
+ 1 file changed, 14 insertions(+)
+ create mode 100644 index.html
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git add .
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git commit -m "Nueva version desarrollada - incluye titulo h3"
+[master 4e0e2b7] Nueva version desarrollada - incluye titulo h3
+ 1 file changed, 1 insertion(+)
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git log
+commit 4e0e2b747cd1e29a444eb34c602e5b6294f3bf54 (HEAD -> master)
+Author: Johan Leoneth Manzano Jimenez <jhoanlmj@gmail.com>
+Date:   Tue Nov 19 22:20:38 2024 -0500
+
+    Nueva version desarrollada - incluye titulo h3
+
+commit a68f804bdbfa4b873dc2bd867d25061e40443986
+Author: Johan Leoneth Manzano Jimenez <jhoanlmj@gmail.com>
+Date:   Tue Nov 19 22:12:31 2024 -0500
+
+    Version con index.html y titulo primario
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git branch
+* master
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git branch rama-version-3
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git branch
+* master
+  rama-version-3
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git checkout rama-version-3
+Switched to branch 'rama-version-3'
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git branch
+  master
+* rama-version-3
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git status
+On branch rama-version-3
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git add .
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git status
+On branch rama-version-3
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git commit -m "Version 3 rama-version-3 incluye titulo h4"
+[rama-version-3 b29f2e4] Version 3 rama-version-3 incluye titulo h4
+ 1 file changed, 1 insertion(+)
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git log
+commit b29f2e4b6daa6598dff6a1e9007bc11b3772cc2c (HEAD -> rama-version-3)
+Author: Johan Leoneth Manzano Jimenez <jhoanlmj@gmail.com>
+Date:   Tue Nov 19 22:30:29 2024 -0500
+
+    Version 3 rama-version-3 incluye titulo h4
+
+commit 4e0e2b747cd1e29a444eb34c602e5b6294f3bf54 (master)
+Author: Johan Leoneth Manzano Jimenez <jhoanlmj@gmail.com>
+Date:   Tue Nov 19 22:20:38 2024 -0500
+
+    Nueva version desarrollada - incluye titulo h3
+
+commit a68f804bdbfa4b873dc2bd867d25061e40443986
+Author: Johan Leoneth Manzano Jimenez <jhoanlmj@gmail.com>
+Date:   Tue Nov 19 22:12:31 2024 -0500
+
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git checkout master
+Switched to branch 'master'
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git branch
+* master
+  rama-version-3
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>code .
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git merge rama-version-3
+Updating 4e0e2b7..b29f2e4
+Fast-forward
+ index.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>code .
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git log
+commit b29f2e4b6daa6598dff6a1e9007bc11b3772cc2c (HEAD -> master, rama-version-3)
+Author: Johan Leoneth Manzano Jimenez <jhoanlmj@gmail.com>
+Date:   Tue Nov 19 22:30:29 2024 -0500
+
+    Version 3 rama-version-3 incluye titulo h4
+
+commit 4e0e2b747cd1e29a444eb34c602e5b6294f3bf54
+Author: Johan Leoneth Manzano Jimenez <jhoanlmj@gmail.com>
+Date:   Tue Nov 19 22:20:38 2024 -0500
+
+    Nueva version desarrollada - incluye titulo h3
+
+commit a68f804bdbfa4b873dc2bd867d25061e40443986
+Author: Johan Leoneth Manzano Jimenez <jhoanlmj@gmail.com>
+Date:   Tue Nov 19 22:12:31 2024 -0500
+
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>gitremote add origin https://github.com/JhoanManzano/talentotech-lab6.git
+"gitremote" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git remote add origin https://github.com/JhoanManzano/talentotech-lab6.git
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.03 KiB | 527.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/JhoanManzano/talentotech-lab6.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\Johan Manzano\Desktop\Programacion TalenTech\Laboratorio 6 Repositorio git>
